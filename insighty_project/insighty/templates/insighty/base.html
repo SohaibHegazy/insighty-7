@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insight</title>
+    {% load static %}
+    <script src="{% static 'insighty/script.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'insighty/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <a href="{% url 'home' %}">insighty</a>
+    </div>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

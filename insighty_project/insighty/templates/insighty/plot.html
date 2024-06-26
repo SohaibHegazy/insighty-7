@@ -1,0 +1,13 @@
+
+{% extends 'insighty/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<h2>Plot</h2>
+<img src="{% static 'insighty/plot.png' %}" alt="Plot">
+<div>
+    <a href="{% url 'refresh' %}"><button>Refresh Graph</button></a>
+    <a href="{% url 'delete_file' %}"><button>Delete File</button></a>
+</div>
+{% endblock %}
